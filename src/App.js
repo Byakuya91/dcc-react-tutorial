@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DisplayEntries from "./Components/DisplayEntries";
 import AddEntryForm from "./Components/AddEntry/AddEntryForm";
+import EntriesChartTracker from "./Components/EntriesChartTracker/EntriesChartTracker";
 
 function App() {
   const [entires, setEntries] = useState([{ weight: 175, date: "11-23-2022" }]);
@@ -13,6 +14,7 @@ function App() {
     <div>
       <DisplayEntries parentEntries={entires} />
       <AddEntryForm addEntryProperty={addNewEntry} />
+      <EntriesChartTracker parentEntries={entires} />
     </div>
   );
 }

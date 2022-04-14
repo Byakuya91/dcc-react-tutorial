@@ -13,7 +13,7 @@ const DisplayEntries = (props) => {
             {props.parentEntries.map((entry, index) => {
                 // debugger;
                 return (
-                <tr>
+                <tr key={index}>
                     <td>{index + 1}</td>
                     <td>{entry.weight}</td>
                     <td>{entry.date}</td>
