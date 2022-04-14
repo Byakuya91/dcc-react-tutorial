@@ -14,6 +14,7 @@ const AddEntryForm = (props) => {
 
         };
         console.log(newEntry);
+        props.addEntryProperty(newEntry);
 
     }
 
